@@ -9,7 +9,7 @@ emoji
 feedparser
 future
 geopy
-git+https://github.com/starry69/python-markdown2.git
+markdown2
 google_trans_new
 humanize
 jikanpy
