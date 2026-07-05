@@ -22,7 +22,7 @@ from REM_RAM import (
 
 # أزرار /start من config.py
 try:
-    from SaitamaRobot.config import Development as _C
+    from REM_RAM.config import Development as _C
     _BTN_UPDATES   = _C.BTN_UPDATES
     _BTN_HOWTO     = _C.BTN_HOWTO
     _BTN_SOURCE    = _C.BTN_SOURCE
@@ -37,9 +37,9 @@ except Exception:
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from SaitamaRobot.modules import ALL_MODULES
-from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
-from SaitamaRobot.modules.helper_funcs.misc import paginate_modules
+from REM_RAM.modules import ALL_MODULES
+from REM_RAM.modules.helper_funcs.chat_status import is_user_admin
+from REM_RAM.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
